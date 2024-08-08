@@ -1,0 +1,43 @@
+.UIInput {
+    width: 100%;
+    box-sizing: border-box;
+}
+.UIInput .outerInput {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: var(--theme-input-border-radius);
+    border-color: var(--theme-background);
+    border-width: var(--2);
+    border-style: solid;
+    padding: 0 var(--15);
+    
+}
+
+
+.UIInput input {
+    box-sizing: border-box;
+    padding: var(--15) 0;
+    width: 100%;
+}
+
+.UIInput .outerInput, 
+.UIInput .outerInput input  {
+    border-color: var(--theme-background-level-2);
+    background-color: var(--theme-background-level-2);
+}
+
+
+.UIInput.colorcard .outerInput, 
+.UIInput.colorcard .outerInput input  {
+    border-color: var(--theme-card-background);
+    background-color: var(--theme-card-background);
+}
+
+.UIInput.error .outerInput {
+    border-color: var(--theme-input-error-color);
+}
+
+.UIInput.error .errorMessage {
+    margin-top: var(--10);
+    color: var(--theme-input-error-color);
+}

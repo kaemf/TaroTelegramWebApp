@@ -1,0 +1,339 @@
+.UIButton {
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+
+    border-width: var(--theme-buttons-border-width);
+    border-style: solid;
+    border-radius: var(--theme-buttons-border-radius);
+}
+
+.nav {
+    z-index: 2 !important;
+}
+
+.UIButton, .UIButton * {
+    transition: color .3s, background-color .3s,  border-color .3s;
+}
+
+.UIButton.navButton {
+    position: relative;
+}
+
+    .UIButton.black {
+        color: var(--theme-buttons-text-color-black);
+        background-color: var(--theme-buttons-background-black);
+        border-color: var(--theme-buttons-background-black);
+    }
+    .UIButton.black.outline {
+        color: var(--theme-buttons-background-black);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-black);
+    }
+        .UIButton.black:hover {
+            background-color: var(--theme-buttons-background-hover-black);
+            border-color: var(--theme-buttons-background-hover-black);
+        }
+        .UIButton.black.outline:hover {
+            color: var(--theme-buttons-background-hover-black);
+            background-color: var(--theme-buttons-background-hover-black-outline);
+        }
+
+    .UIButton.pink {
+        color: var(--theme-buttons-text-color-pink);
+        background-color: var(--theme-buttons-background-pink);
+        border-color: var(--theme-buttons-background-pink);
+    }
+    .UIButton.pink.outline {
+        color: var(--theme-buttons-background-pink);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-pink);
+    }
+        .UIButton.pink:hover {
+            background-color: var(--theme-buttons-background-hover-pink);
+            border-color: var(--theme-buttons-background-hover-pink);
+        }
+        .UIButton.pink.outline:hover {
+            color: var(--theme-buttons-background-hover-pink);
+            background-color: var(--theme-buttons-background-hover-pink-outline);
+        }
+
+    .UIButton.gray {
+        color: var(--theme-buttons-text-color-gray);
+        background-color: var(--theme-buttons-background-gray);
+        border-color: var(--theme-buttons-background-gray);
+    }
+    .UIButton.gray.outline {
+        color: var(--theme-buttons-background-gray);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-gray);
+    }
+        .UIButton.gray:hover {
+            background-color: var(--theme-buttons-background-hover-gray);
+            border-color: var(--theme-buttons-background-hover-gray);
+        }
+        .UIButton.gray.outline:hover {
+            color: var(--theme-buttons-background-hover-gray);
+            background-color: var(--theme-buttons-background-hover-gray-outline);
+        }
+    .UIButton.orange {
+        color: var(--theme-buttons-text-color-orange);
+        background-color: var(--theme-buttons-background-orange);
+        border-color: var(--theme-buttons-background-orange);
+    }
+    .UIButton.orange.outline {
+        color: var(--theme-buttons-background-orange);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-orange);
+    }
+        .UIButton.orange:hover {
+            background-color: var(--theme-buttons-background-hover-orange);
+            border-color: var(--theme-buttons-background-hover-orange);
+        }
+        .UIButton.orange.loading, .UIButton.UIButton.orange.disable {
+            cursor: default;
+            background-color: var(--theme-buttons-background-orange-loading);
+            border-color: var(--theme-buttons-background-orange-loading);
+        }
+    .UIButton.darkWhite {
+        color: var(--theme-buttons-text-color-darkWhite);
+        background-color: var(--theme-buttons-background-darkWhite);
+        border-color: var(--theme-buttons-background-darkWhite);
+    }
+    .UIButton.darkWhite.outline {
+        color: var(--theme-buttons-background-darkWhite);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-darkWhite);
+    }
+        .UIButton.darkWhite:hover {
+            background-color: var(--theme-buttons-background-hover-darkWhite);
+            border-color: var(--theme-buttons-background-hover-darkWhite);
+        }
+    
+    .UIButton.bg {
+        color: var(--theme-text-color-default);
+        background-color: var(--theme-background);
+        border-color: var(--theme-background);
+    }
+    .UIButton.bg.outline {
+        color: var(--theme-text-color-default);
+        background-color: unset;
+        border-color: var(--theme-background);
+    }
+        .UIButton.bg:hover {
+            background-color: var(--theme-background-level-2);
+            border-color: var(--theme-background-level-2);
+        }
+        .UIButton.bg.disable {
+            background-color: var(--theme-background);
+            border-color: var(--theme-background);
+            cursor: default;
+            opacity: 0.3;
+        }
+            
+
+    .UIButton.theme {
+        color: var(--theme-buttons-text-color-theme);
+        background-color: var(--theme-buttons-background-theme);
+        border-color: var(--theme-buttons-background-theme);
+    }
+    .UIButton.theme.outline {
+        color: var(--theme-buttons-background-theme);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-theme);
+    }
+        .UIButton.theme:hover {
+            background-color: var(--theme-buttons-background-hover-theme);
+            border-color: var(--theme-buttons-background-hover-theme);
+        }
+        .UIButton.theme.loading, .UIButton.UIButton.theme.disable {
+            cursor: default;
+            background-color: var(--theme-buttons-background-theme-loading);
+            border-color: var(--theme-buttons-background-theme-loading);
+        }
+        .UIButton.theme.filled * {
+            fill: var(--theme-buttons-text-color-theme);
+            color: var(--theme-buttons-text-color-theme);
+        }
+        .UIButton.theme.filled:hover * {
+            fill: var(--theme-buttons-text-color-hover-theme);
+            color: var(--theme-buttons-text-color-hover-theme);
+        }
+        .UIButton.theme.filled.disable:hover * {
+            fill: var(--theme-buttons-text-color-theme);
+            color: var(--theme-buttons-text-color-theme);
+        }
+
+     
+
+    .UIButton.blue {
+        color: var(--theme-buttons-text-color-blue);
+        background-color: var(--theme-buttons-background-blue);
+        border-color: var(--theme-buttons-background-blue);
+    }
+    .UIButton.blue.outline {
+        color: var(--theme-buttons-background-blue);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-blue);
+    }
+        .UIButton.blue:hover {
+            background-color: var(--theme-buttons-background-hover-blue);
+            border-color: var(--theme-buttons-background-hover-blue);
+        }
+        .UIButton.blue.loading, .UIButton.UIButton.blue.disable {
+            cursor: default;
+            background-color: var(--theme-buttons-background-blue-loading);
+            border-color: var(--theme-buttons-background-blue-loading);
+        }
+
+    
+
+    .UIButton.green {
+        color: var(--theme-buttons-text-color-green);
+        background-color: var(--theme-buttons-background-green);
+        border-color: var(--theme-buttons-background-green);
+    }
+    .UIButton.green.outline {
+        color: var(--theme-buttons-background-green);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-green);
+    }
+        .UIButton.green:hover {
+            background-color: var(--theme-buttons-background-hover-green);
+            border-color: var(--theme-buttons-background-hover-green);
+        }
+        .UIButton.green.loading, .UIButton.UIButton.green.disable {
+            cursor: default;
+            background-color: var(--theme-buttons-background-green-loading);
+            border-color: var(--theme-buttons-background-green-loading);
+        }
+        
+
+    .UIButton.blue {
+        color: var(--theme-buttons-text-color-blue);
+        background-color: var(--theme-buttons-background-blue);
+        border-color: var(--theme-buttons-background-blue);
+    }
+    .UIButton.blue.outline {
+        color: var(--theme-buttons-background-blue);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-blue);
+    }
+        .UIButton.blue:hover {
+            background-color: var(--theme-buttons-background-hover-blue);
+            border-color: var(--theme-buttons-background-hover-blue);
+        }
+        .UIButton.blue.loading, .UIButton.UIButton.blue.disable {
+            cursor: default;
+            background-color: var(--theme-buttons-background-blue-loading);
+            border-color: var(--theme-buttons-background-blue-loading);
+        }
+
+    .UIButton.darkRed {
+        color: var(--theme-buttons-text-color-darkRed);
+        background-color: var(--theme-buttons-background-darkRed);
+        border-color: var(--theme-buttons-background-darkRed);
+    }
+    .UIButton.darkRed.outline {
+        color: var(--theme-buttons-background-darkRed);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-darkRed);
+    }
+        .UIButton.darkRed:hover {
+            background-color: var(--theme-buttons-background-hover-darkRed);
+            border-color: var(--theme-buttons-background-hover-darkRed);
+        }
+        .UIButton.darkRed.loading, .UIButton.UIButton.darkRed.disable {
+            cursor: default;
+            background-color: var(--theme-buttons-background-darkRed-loading);
+            border-color: var(--theme-buttons-background-darkRed-loading);
+        }
+        
+    
+    
+    .UIButton.themeDark {
+        color: var(--theme-buttons-text-color-themeDark);
+        background-color: var(--theme-buttons-background-themeDark);
+        border-color: var(--theme-buttons-background-themeDark);
+    }
+    .UIButton.themeDark.outline {
+        color: var(--theme-buttons-background-themeDark);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-themeDark);
+    }
+        .UIButton.themeDark:hover {
+            background-color: var(--theme-buttons-background-hover-themeDark);
+            border-color: var(--theme-buttons-background-hover-themeDark);
+        }
+        .UIButton.themeDark.loading, .UIButton.UIButton.themeDark.disable {
+            cursor: default;
+            background-color: var(--theme-buttons-background-themeDark-loading);
+            border-color: var(--theme-buttons-background-themeDark-loading);
+        }
+
+    
+    .UIButton.white {
+        color: var(--theme-buttons-text-color-white);
+        background-color: var(--theme-buttons-background-white);
+        border-color: var(--theme-buttons-background-white);
+    }
+    .UIButton.white.outline {
+        color: var(--theme-buttons-background-white);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-white);
+    }
+        .UIButton.white:hover {
+            background-color: var(--theme-buttons-background-hover-white);
+            border-color: var(--theme-buttons-background-hover-white);
+        }
+        .UIButton.white.loading, .UIButton.UIButton.white.disable {
+            cursor: default;
+            background-color: var(--theme-buttons-background-white-loading);
+            border-color: var(--theme-buttons-background-white-loading);
+        }
+
+    
+    .UIButton.whatsapp {
+        color: var(--theme-buttons-text-color-whatsapp);
+        background-color: var(--theme-buttons-background-whatsapp);
+        border-color: var(--theme-buttons-background-whatsapp);
+    }
+    .UIButton.whatsapp.outline {
+        color: var(--theme-buttons-background-whatsapp);
+        background-color: unset;
+        border-color: var(--theme-buttons-background-whatsapp);
+    }
+        .UIButton.whatsapp:hover {
+            background-color: var(--theme-buttons-background-hover-whatsapp);
+            border-color: var(--theme-buttons-background-hover-whatsapp);
+        }
+        .UIButton.whatsapp.loading, .UIButton.UIButton.whatsapp.disable {
+            cursor: default;
+            background-color: var(--theme-buttons-background-whatsapp-loading);
+            border-color: var(--theme-buttons-background-whatsapp-loading);
+        }
+
+.UIButton.position_left {
+    justify-content: flex-start;
+}
+
+
+
+.UIButton .nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.UIButton.text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,38 @@
+.UITextArea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.UITextArea textarea {
+    background-color: var(--theme-background-level-2);
+    box-sizing: border-box;
+    width: 100%;
+    padding: var(--15) var(--15);
+    border-width: var(--2);
+    border-style: solid;
+    border-radius: var(--theme-input-border-radius);
+    border-color: var(--theme-background);
+}
+
+
+
+.UITextArea.colorcard textarea  {
+    border-color: var(--theme-card-background);
+    background-color: var(--theme-card-background);
+}
+
+
+.UITextArea.colortheme2 textarea  {
+    border-color: var(--theme-background-level-2);
+    background-color: var(--theme-background-level-2);
+}
+
+.UITextArea.error textarea {
+    border-color: var(--theme-textarea-error-color);
+}
+
+.UITextArea.error .errorMessage {
+    margin-top: var(--10);
+    color: var(--theme-textarea-error-color);
+}

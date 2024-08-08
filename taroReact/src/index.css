@@ -1,0 +1,260 @@
+.Taro {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+  .OuterPage {
+    height: 100vh;
+    height: 100%;
+  }
+
+
+
+
+  .bottomItems,
+  .OuterTitle {
+    z-index: 5;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    transition: .3s;
+  }
+  .OuterTitle {
+    top: calc( var(--120) * -1);
+  }
+
+  .bottomItems {
+    bottom: calc( var(--120) * -1);
+  }
+  .bottomItems.active {
+    bottom: var(--20);
+    opacity: 1;
+  }
+
+  .OuterTitle.active {
+    top: var(--20);
+    opacity: 1;
+
+    transition: 1s;
+  }
+  .TitleName {
+    text-transform: uppercase;
+  }
+
+
+.bgNotClick {
+  position: absolute;
+  z-index: 4;
+  background: #16171d4f;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+video::-webkit-media-controls {
+    display: none !important;
+    -webkit-appearance: none;
+    opacity: 0
+}
+
+.custom-video-controls {
+    z-index: 2147483647
+}
+
+
+
+.outerCats {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #000;
+}
+
+
+.OuterVideo {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+
+}
+
+.OuterVideo video {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 100vw;
+  left: 50%;
+  top: 50%;
+  transform: scale(1.7) translateX(-20%) translateY(-50%);
+  transition: opacity 2s; 
+
+}
+
+.OuterVideo.active video {
+  opacity: 1;
+  transform: scale(1.0) translateX(-50%) translateY(-50%);
+  transition: opacity 2s; 
+}
+.OuterVideo.active.text video {
+  opacity: 0.4;
+  transition: transform 1s, opacity 2s; 
+}
+
+.OuterVideo.active.transit video {
+  opacity: 0;
+  transition: transform 1s, opacity 2s; 
+}
+
+video.openingLoop {
+  transition: transform 1.3s, opacity 2s !important; 
+}
+
+pre {
+  
+  white-space: pre-wrap;
+}
+.OuterDesc {
+  max-height: 70vh;
+  overflow-y: auto;
+  opacity: 0;
+  box-sizing: border-box;
+  padding: var(--20);
+  z-index: 5;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  min-height: 60vh;
+  transition: .3s;
+}
+
+.OuterDesc.active {
+  opacity: 1;
+  transition: .3s;
+}
+
+
+
+
+
+
+
+.outerCards {
+  opacity: 1;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  transition: transform 1.4s, width 1.4s, height 1.4s, opacity .3s 1.5s;
+  
+}
+
+.outerCards .card {
+  overflow: hidden;
+  background-color: #a2a2a212;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+  .outerCards .card::after {
+    z-index: 1;
+    content: "";
+    animation-name: loader;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2.3s;
+    background: #84a5ff53;
+    bottom: -10%;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    left: -10%;
+    opacity: 1;
+    position: absolute;
+    top: -10%;
+    transform: rotate(25deg);
+    width: 30px;
+  }
+
+.outerCards .card.seeLater {
+  background-color: #080b1396;
+}
+  .outerCards .card.seeLater::after {
+    display: none;
+  }
+
+  .outerCards.focuse {
+    opacity: 0;
+    transition: transform 1.4s, width 1.4s, height 1.4s, opacity .3s;
+  }
+@keyframes loader {
+    0% {
+        left: -10%;
+        opacity: 0
+    }
+
+    10% {
+        left: 10%;
+        opacity: 1
+    }
+
+    90% {
+        left: 90%;
+        opacity: 1
+    }
+
+    to {
+        left: 110%;
+        opacity: 0
+    }
+}
+
+
+
+.outerLoading {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.Shadow {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  box-shadow: inset 0px 0px 100px 50px #000;
+  transition: .3s;
+}
+
+
+.Shadow.active {
+  opacity: 1;
+  transition: .9s;
+}

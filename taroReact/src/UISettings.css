@@ -1,0 +1,366 @@
+
+:root {
+
+    --font-family: 'Montserrat';
+    /* --font-family: 'Inter', 'Montserrat'; */
+    --font-weight: 400;
+    --font-bold-weight: 700;
+    --font-black-weight: 800;
+
+    --theme-background: #0F1421;
+
+    --theme-card-background: #161D2E;
+    --theme-card-background-level-2: #202D45;
+    --theme-text-color-default: #ffffff;
+    --theme-text-color-default-level-2: #BFC8E2;
+
+    --theme-buttons-border-radius: 0;
+
+
+    --theme-buttons-text-color-theme: #1A1D29;
+    --theme-buttons-text-color-hover-theme: #ffffff;
+    --theme-buttons-background-theme: #202D45;
+    --theme-buttons-background-hover-theme: #202D45;
+    --theme-buttons-background-hover-theme-outline: #171717;
+    --theme-buttons-background-theme-loading: #2e3644;
+
+    /* --navbar-height: var(--80);
+    --sidebar-width: var(--80);
+    --width-chat: var(--350);
+
+    --theme-text-color-default-level-3: #78839C;
+    --theme-text-color-default-invert: #000000;
+    --theme-card-border-radius: 0;
+
+    
+
+    --theme-buttons-text-color-green: #0F0F0F;
+    --theme-buttons-background-green: #53EC90;
+    --theme-buttons-background-hover-green: var(--lime1-hover);
+    --theme-buttons-background-hover-green-outline: #171717;
+    --theme-buttons-background-green-loading: #171717;
+
+    --theme-buttons-text-color-pink: #0F0F0F;
+    --theme-buttons-background-pink: #ec53d7;
+    --theme-buttons-background-hover-pink: var(--pink1-hover);
+    --theme-buttons-background-hover-pink-outline: #171717;
+    --theme-buttons-background-pink-loading: #171717;
+
+
+
+    --limeBackground: #243F4C;
+
+
+
+    --theme-background-level-2: #161D2E;
+    /* --theme-background-level-3: #030304; */
+    --theme-background-invert: #101010;
+    --theme-border: #171717;
+
+    --theme-buttons-border-width: 2px;
+
+    
+    --theme-card-box-shadow-big: #000000f5 0px 0px 100px;
+    --theme-card-box-shadow: #00000057 0px 0px 50px;
+
+    --theme-buttons-text-color-gray: #c3c3c8;
+    --theme-buttons-background-gray: #6c6f72;
+    --theme-buttons-background-hover-gray: #ffffff;
+    --theme-buttons-background-hover-gray-outline: #17171b;
+
+
+    --wrapper-width: 80%;
+
+
+    --fontSize12: 14px;
+    --fontSize14: 16px;
+    --fontSize16: 18px;
+    --fontSize18: 20px;
+    --fontSize20: 22px;
+    --fontSize24: 26px;
+    --fontSize32: 36px;
+    --fontSize42: 48px;
+    --fontSize48: 64px;
+
+    
+
+}
+@media only screen and (max-width : 1280px) {
+    :root {
+
+        --fontSize12: 14px;
+        --fontSize14: 16px;
+        --fontSize16: 18px;
+        --fontSize18: 20px;
+        --fontSize20: 22px;
+        --fontSize24: 26px;
+        --fontSize32: 36px;
+        --fontSize42: 48px;
+        --fontSize48: 64px;    
+    }
+}
+@media only screen and (max-width : 1024px) {
+    :root {
+        --fontSize12: 14px;
+        --fontSize14: 16px;
+        --fontSize16: 18px;
+        --fontSize18: 20px;
+        --fontSize20: 22px;
+        --fontSize24: 26px;
+        --fontSize32: 36px;
+        --fontSize42: 48px;
+        --fontSize48: 64px;    
+    }
+}
+@media only screen and (max-width : 800px)  {
+    :root {
+        --fontSize12: 14px;
+        --fontSize14: 16px;
+        --fontSize16: 18px;
+        --fontSize18: 20px;
+        --fontSize20: 22px;
+        --fontSize24: 26px;
+        --fontSize32: 36px;
+        --fontSize42: 48px;
+        --fontSize48: 64px;    
+    }
+}
+@media only screen and (max-width : 768px) {
+    :root {
+        --fontSize12: 14px;
+        --fontSize14: 16px;
+        --fontSize16: 18px;
+        --fontSize18: 20px;
+        --fontSize20: 22px;
+        --fontSize24: 26px;
+        --fontSize32: 36px;
+        --fontSize42: 48px;
+        --fontSize48: 64px;    
+    }
+}
+@media only screen and (max-width : 600px)  {
+    :root {
+        --fontSize12: 14px;
+        --fontSize14: 16px;
+        --fontSize16: 18px;
+        --fontSize18: 20px;
+        --fontSize20: 22px;
+        --fontSize24: 26px;
+        --fontSize32: 36px;
+        --fontSize42: 48px;
+        --fontSize48: 64px;    
+    }
+}
+
+/* 
+:root {
+    --lime1: #84feb3;
+    --lime2: #31b967;
+    --lime3: #77f8a9;
+    --lime4: #35bc6b;
+    --lime1-hover: #53EC90;
+    --lime2-hover: #53EC90;
+    
+    --pink1: #fe84f2;
+    --pink2: #b931a9;
+    --pink3: #f877e0;
+    --pink4: #bc359a;
+    --pink1-hover: #ec53d2;
+    --pink2-hover: #ec53d7;
+}
+
+.OuterUIButton {
+    cursor: pointer;
+    border-radius: var(--theme-buttons-border-radius);
+    box-sizing: border-box;
+    padding: 1px;
+}
+    .OuterUIButton.green {
+        background: var(--lime1);
+        background: -moz-linear-gradient(180deg, var(--lime1) 0%,  var(--lime2)  100%);
+        background: -webkit-linear-gradient(180deg,  var(--lime1)  0%,  var(--lime2)  100%);
+        background: linear-gradient(180deg,  var(--lime1)  0%,  var(--lime2)  100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--lime1)",endColorstr="var(--lime2)",GradientType=1);
+        box-shadow: 0px 10px 10px 0px #53EC9033;
+        transition: box-shadow .3s;
+
+    }
+        .OuterUIButton.green:hover {
+            background: var(--lime1-hover);
+            background: -moz-linear-gradient(180deg, var(--lime1-hover) 0%,  var(--lime2-hover)  100%);
+            background: -webkit-linear-gradient(180deg,  var(--lime1-hover)  0%,  var(--lime2-hover)  100%);
+            background: linear-gradient(180deg,  var(--lime1-hover)  0%,  var(--lime2-hover)  100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--lime1-hover)",endColorstr="var(--lime2-hover)",GradientType=1);
+            box-shadow: 0px 10px 10px 0px #53EC9066;
+            transition: box-shadow .3s;
+        }
+        
+    .OuterUIButton.pink {
+        background: var(--pink1);
+        background: -moz-linear-gradient(180deg, var(--pink1) 0%,  var(--pink2)  100%);
+        background: -webkit-linear-gradient(180deg,  var(--pink1)  0%,  var(--pink2)  100%);
+        background: linear-gradient(180deg,  var(--pink1)  0%,  var(--pink2)  100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--pink1)",endColorstr="var(--pink2)",GradientType=1);
+        box-shadow: 0px 10px 10px 0px #53EC9033;
+        transition: box-shadow .3s;
+
+    }
+        .OuterUIButton.pink:hover {
+            background: var(--pink1-hover);
+            background: -moz-linear-gradient(180deg, var(--pink1-hover) 0%,  var(--pink2-hover)  100%);
+            background: -webkit-linear-gradient(180deg,  var(--pink1-hover)  0%,  var(--pink2-hover)  100%);
+            background: linear-gradient(180deg,  var(--pink1-hover)  0%,  var(--pink2-hover)  100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--pink1-hover)",endColorstr="var(--pink2-hover)",GradientType=1);
+            box-shadow: 0px 10px 10px 0px #ec53cd66;
+            transition: box-shadow .3s;
+        }
+
+
+
+    .OuterUIButton .UIButton::after {
+        border-radius: var(--theme-buttons-border-radius);
+        transition: opacity .3s  ease-in-out;
+        opacity: 0;
+        z-index: 0;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+        .OuterUIButton .UIButton.green::after {
+            background: linear-gradient(180deg, rgba(119,248,169,1) 0%, rgba(53,188,107,1) 100%);
+        }
+        .OuterUIButton:hover .UIButton.green::after {
+            transition: opacity .3s  ease-in-out;
+            opacity: 1;
+        }
+        
+        .OuterUIButton .UIButton.pink::after {
+            background: linear-gradient(180deg, rgb(248, 119, 214) 0%, rgb(188, 53, 165) 100%);
+        }
+        .OuterUIButton:hover .UIButton.pink::after {
+            transition: opacity .3s  ease-in-out;
+            opacity: 1;
+        }
+
+.UIButton {
+    position: relative;
+}
+.UIButton > * {
+    z-index: 1;
+}
+
+.UIButton.green .UIColor {
+    color: var(--theme-buttons-text-color-green)
+}
+
+
+
+
+
+
+.UIButtonHovering:hover .UIButton.theme {
+    background-color: var(--theme-buttons-background-hover-theme);
+    border-color: var(--theme-buttons-background-hover-theme);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sliderPadding {
+    padding-top: var(--20) !important;
+    padding-bottom: var(--20) !important;
+}
+.sliderPadding30 {
+    padding-top: var(--30) !important;
+    padding-bottom: var(--30) !important;
+}
+
+.swiper-slide {
+    width: max-content !important;
+}
+
+
+
+
+.colorTheme {
+    color: var(--lime1);
+}
+
+
+
+
+.promo {
+    --purple: #E053EC;
+
+    width: max-content;
+    border-radius: 1000px;
+    padding: var(--5) var(--8);
+    border-width: var(--2);
+    border-style: solid
+}
+.promo.purple {
+    border-color: var(--purple);
+    color: var(--purple);
+    text-transform: uppercase;
+}
+
+
+* {
+    line-height: 1.15;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.line {
+    height: var(--2);
+} */
+
+
+.UIButton {
+    position: relative;
+}
+
+.UIButton::after {
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background: 000;
+    z-index: 100;
+    width: calc(100% - var(--4));
+    height: calc(100% - var(--4));
+    border: 2px solid #5D4842;
+}

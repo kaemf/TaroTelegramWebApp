@@ -1,0 +1,41 @@
+.UIPopup {
+    cursor: default;
+    position: absolute;
+}
+.UIPopup.disable {
+    width: 0;
+    height: 0;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.UIPopup.enable {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.UIPopup.right {
+    right: 0;
+}
+
+.UIPopup.left {
+    left: 0;
+}
+
+.UIPopup.top {
+    bottom: 50%;
+}
+    .UIPopup.enable.top {
+        bottom: calc( 100% + var(--10) );
+    }
+
+.UIPopup.bottom {
+    top: 50%;
+}
+    .UIPopup.enable.bottom {
+        top: calc( 100% + var(--10) );
+    }
+
+
+

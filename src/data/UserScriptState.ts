@@ -1,0 +1,11 @@
+export type UserScriptState =
+  | "ErrorsException"
+  | "CheckFunctionAndGetCombination"
+  | "CheckCombinationAndCheckIfFree"
+  | "CheckIfFreeAndSend"
+  | "RespondCountUserAndSend"
+  | "AdmRespondCombinationAndRoot"
+  | "AdmRespondRootAndGoAction"
+  | "AdmRespondFunction"
+  | "AdmRespondCountUser"
+  | "AdmRespondCombination"

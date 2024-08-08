@@ -1,0 +1,94 @@
+.container-rounes{
+    display: flex;
+    position: relative;
+    background: rgb(23, 33, 43);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.title-roune{
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+.title-roune::before{
+    content: 'ВВЕДИТЕ КОМБИНАЦИЮ';
+}
+
+.main-roune-block{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.roune-item{
+    width: 80px;
+    height: 60px;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    transition: opacity 1s ease;
+    font-weight: 600;
+    opacity: 0;
+    font-size: 20px;
+    margin: 10px;
+}
+
+img.no-active{
+    width: 80px;
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 1;
+}
+
+.roune-item:hover .no-active{
+    filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 0.5));
+}
+
+img.active{
+    width: 80px;
+    transition: all .3s ease;
+    position: absolute;
+    opacity: 0;
+}
+
+.button-submit-roune{
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    width: 80%;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.button-submit-roune::before{
+    content: 'Подтвердить';
+}
+
+.button-submit-roune:hover{
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.24), 0 2px 40px 0 rgba(255, 255, 255, 0.19);
+    box-shadow: 0 0px 0px 0 rgba(255, 255, 255, 0.24), 0 5px 40px 0 rgba(255, 255, 255, 0.19);
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.vibrating {
+    animation: vibrate 0.1s;
+}

@@ -1,0 +1,18 @@
+
+.UICheckBox {
+    border-radius: var(--5);
+    border-color: #000;
+    border-width: var(--2);
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.UICheckBox .value {
+    border-radius: var(--2);
+    width: 80%;
+    height: 80%;
+    background-color: #000;
+}

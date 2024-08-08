@@ -1,0 +1,49 @@
+.OuterLazy {
+    cursor: default !important;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    overflow: hidden;
+}
+
+.OuterLazy * {
+    cursor: default !important;
+}
+
+.OuterLazy .bg {
+    animation-name: loader;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: #8775ff2b;
+    bottom: -10%;
+    filter: blur(20px);
+    left: -10%;
+    opacity: 0;
+    position: absolute;
+    top: -10%;
+    transform: rotate(25deg);
+    width: 30px;
+}
+
+
+@keyframes loader {
+    0% {
+        left: -10%;
+        opacity: 0
+    }
+
+    10% {
+        left: 10%;
+        opacity: 1
+    }
+
+    90% {
+        left: 90%;
+        opacity: 1
+    }
+
+    to {
+        left: 110%;
+        opacity: 0
+    }
+}

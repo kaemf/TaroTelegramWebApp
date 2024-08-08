@@ -1,0 +1,12 @@
+.UINavbar {
+    z-index: 10;
+    position: fixed;
+    transition: top .3s;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.UINavbar.hidden {
+    top: -100px;
+    transition: top .3s;
+}

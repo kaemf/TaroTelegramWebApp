@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/taro.css">
+    <link rel="stylesheet" href="assets/rounes.css">
+    <title>Telegram Web App</title>
+</head>
+<body>
+    <video src="./soundtrack/utomp3.com - SLICK x Noobody  makemefeel_v144P.mp4" autoplay="true" loop="true" playsinline="true" preload="auto" style="display: none"></video>
+
+    <div class="container-taro">
+        <div style="display: none;" class="title-roune"></div>
+        <div style="display: none;" class="main-roune-block">
+            <div class="roune-item" index="1">
+                <img src="content-rounes/1.png" alt="1" class="no-active">
+                <img src="content-rounes/1_.png" alt="_1_" class="active">
+            </div>
+            <div class="roune-item" index="2">
+                <img src="content-rounes/2.png" alt="2" class="no-active">
+                <img src="content-rounes/2_.png" alt="_2_" class="active">
+            </div>
+            <div class="roune-item" index="3">
+                <img src="content-rounes/3.png" alt="3" class="no-active">
+                <img src="content-rounes/3_.png" alt="_3_" class="active">
+            </div>
+            <div class="roune-item" index="4">
+                <img src="content-rounes/4.png" alt="4" class="no-active">
+                <img src="content-rounes/4_.png" alt="_4_" class="active">
+            </div>
+            <div class="roune-item" index="5">
+                <img src="content-rounes/5.png" alt="5" class="no-active">
+                <img src="content-rounes/5_.png" alt="_5_" class="active">
+            </div>
+            <div class="roune-item" index="6">
+                <img src="content-rounes/6.png" alt="6" class="no-active">
+                <img src="content-rounes/6_.png" alt="_6_" class="active">
+            </div>
+            <div class="roune-item" index="7">
+                <img src="content-rounes/7.png" alt="7" class="no-active">
+                <img src="content-rounes/7_.png" alt="_7_" class="active">
+            </div>
+            <div class="roune-item" index="8">
+                <img src="content-rounes/8.png" alt="8" class="no-active">
+                <img src="content-rounes/8_.png" alt="_8_" class="active">
+            </div>
+            <div class="roune-item" index="9">
+                <img src="content-rounes/9.png" alt="9" class="no-active">
+                <img src="content-rounes/9_.png" alt="_9_" class="active">
+            </div>
+            <!-- <div class="roune-item" index="10">
+                <img src="content-rounes/10.png" alt="10" class="no-active">
+                <img src="content-rounes/10_.png" alt="_10_" class="active">
+            </div>
+            <div class="roune-item" index="11">
+                <img src="content-rounes/11.png" alt="11" class="no-active">
+                <img src="content-rounes/11_.png" alt="_11_" class="active">
+            </div>
+            <div class="roune-item" index="12">
+                <img src="content-rounes/12.png" alt="12" class="no-active">
+                <img src="content-rounes/12_.png" alt="_12_" class="active">
+            </div> -->
+        </div>
+        <div style="display: none;" class="button-submit-roune"></div>
+        <video src="./content-background/closed_card_background.mp4" autoplay="true" loop="true" muted="false" playsinline="true" preload="auto" class="closed-background fade-in"></video>
+        <video src="./content-background/card_opening.mp4" autoplay="true" muted="false" playsinline="true" preload="auto" class="opening-background fade-out"></video>
+        <video src="./content-background/open_card_background.mp4" autoplay="true" loop="true" muted="false" playsinline="true" preload="auto" class="open-background fade-out"></video>
+        <div class="overlay"></div>
+        <div style="display: none;" class="title"></div>
+        <div style="display: none;" class="content-text"></div>
+        <div style="display: none;" class="button-next"></div>
+    </div>
+
+    <!-- System -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="assets/scripts/system/requests.js"></script>
+    <script src="assets/scripts/system/getUserId.js"></script>
+    <script src="assets/scripts/system/transitionBetweenRounesAndTaro.js"></script>
+    <script src="assets/scripts/system/isMob.js"></script>
+    <script src="assets/scripts/system/closeWindow.js"></script>
+    <!--  -->
+
+    <!-- Card of Day -->
+    <script src="assets/scripts/card/init.js"></script>
+    <script src="assets/scripts/card/loadBackgrounds.js"></script>
+    <script src="assets/scripts/card/recreateDOM.js"></script>
+    <script src="assets/scripts/card/transition.js"></script>
+    <script src="assets/scripts/card/startMessage.js"></script>
+    <script src="assets/scripts/card/animationText.js"></script>
+    <script src="assets/scripts/card/random.js"></script>
+    <script src="assets/scripts/card/cardbase.js"></script>
+    <script src="assets/scripts/card/script.js"></script>
+    <!--  -->
+    
+    <!-- Rounes Passcode -->
+    <script src="assets/scripts/rounes/rouneVibrate.js"></script>
+    <script src="assets/scripts/rounes/init.js"></script>
+    <script src="assets/scripts/rounes/compare.js"></script>
+    <script src="assets/scripts/rounes/script.js"></script>
+    <!--  -->
+</body>
+</html>

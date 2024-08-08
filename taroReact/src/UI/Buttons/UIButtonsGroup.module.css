@@ -1,0 +1,10 @@
+
+.UIButtonsGroup .right > * {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.UIButtonsGroup .left > * {
+    margin-left: -2px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
