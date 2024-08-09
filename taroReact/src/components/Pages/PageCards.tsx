@@ -170,16 +170,13 @@ const PageCards: React.FC = ({ data, rasklad, setData, active, openPage, widthPx
         { fullT && <Desc speed={110} primary={fullTClick} data={ [ { text: data.fullTract }] } active={fullTA} handleEnd={handleEndDesc} />}
         <div className={`outerCards ${focus && focus.focus && `focuse`}`} style={{width: widthPx,  height: heightPx, transform: focus && focus.focus && focus.focus.transform }}>
             {data.whatIsCards.map( ( el, i ) => {
-                console.log(i)
                 let handleEl
                 let seeLater
-                let cardName = data.cardsName[rasklad][i].name;
-
-                alert(cardName)
+                let cardName = data.cardsName[rasklad][i];
 
                 if( !focus || !focus.focus || focus.focus.transform !== el.focus.transform) {
-                    handleEl = cardName
-                    if( cardHistory.some(item => item.name === cardName) ) {
+                    handleEl = {name: cardName.name, focus: el.focus}
+                    if( cardHistory.some(item => item.name === cardName.name) ) {
                         seeLater = true;
                     }
                 }
