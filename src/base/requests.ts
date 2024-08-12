@@ -4,6 +4,9 @@ import { Express } from "express";
 import { ChatCompletion } from "openai/resources/chat/completions";
 import DataBase from "./databaseOperation";
 import { MongoClient, ObjectId } from "mongodb";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export default function Requests(app: Express, wRedis: any, mongo: MongoClient){
     const base = DataBase(mongo);
@@ -109,7 +112,7 @@ export default function Requests(app: Express, wRedis: any, mongo: MongoClient){
     async function askChatGPT(prompt: string, promptInputed?: boolean): Promise<string | undefined | null | ChatCompletion> {
         try {
             const client = new openai.OpenAI({
-                apiKey: 'sk-hlisQdgqViJlx8pB4bcAxJjRq8tDHxY-8Ui_nDold0T3BlbkFJkhzrdCGrIc27GECsAHaVprI1VIrUSQnk9TBlj_26IA',
+                apiKey: process.env.GPTKEY ?? '',
             });
 
             const response = await client.chat.completions.create({
