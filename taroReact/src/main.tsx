@@ -9,9 +9,9 @@ import './UISettings.css'
 import { BrowserRouter } from 'react-router-dom'
 import 'swiper/css';
 import { Provider } from 'react-redux'
-import eruda from 'eruda';
+// import eruda from 'eruda';
 
-  eruda.init()
+// eruda.init()
 // import { store } from './store/index.ts'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

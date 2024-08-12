@@ -11,6 +11,7 @@ import Function from "./data/function";
 import keyboards from "./data/keyboards";
 import Link from "./data/link";
 import dotenv from "dotenv";
+import path from "path";
 
 dotenv.config();
 
@@ -22,13 +23,21 @@ async function main() {
   //Begin bot work, collecting user data (his telegram name)
   bot.start((ctx) => {
     console.log('\n\nBOT STARTED (Pressed /start button)');
-    ctx.reply('Привет! Нажми на кнопку ниже, чтобы начать пользоваться ботом', {
-      reply_markup: {
+    ctx.replyWithPhoto({ source: path.join(__dirname, 'base/start/start_media_send.jpg') },{ 
+        caption: 'Перед вами дверь к разгадкам... Но нужен код! Готовы войти? Заходите в приложение!',
+        reply_markup: {
           inline_keyboard: [
               [{ text: 'Открыть', web_app: { url: `${link}/webapp?userId=${ ctx?.chat?.id }` } }]
           ]
-      }
-    });
+        }
+      });
+    // ctx.reply('Привет! Нажми на кнопку ниже, чтобы начать пользоваться ботом', {
+    //   reply_markup: {
+    //       inline_keyboard: [
+    //           [{ text: 'Открыть', web_app: { url: `${link}/webapp?userId=${ ctx?.chat?.id }` } }]
+    //       ]
+    //   }
+    // });
 
     const username = ctx.chat.type === "private" ? ctx.chat.username ?? null : null;
     db.set(ctx.chat.id)('username')(username ?? 'unknown');

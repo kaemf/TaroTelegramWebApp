@@ -109,7 +109,7 @@ export default function Requests(app: Express, wRedis: any, mongo: MongoClient){
     async function askChatGPT(prompt: string, promptInputed?: boolean): Promise<string | undefined | null | ChatCompletion> {
         try {
             const client = new openai.OpenAI({
-                apiKey: 'sk-proj-XgGqxE7kTjCllIOIo2PDT3BlbkFJni1l6z2pDEzWI0CBSjm1',
+                apiKey: 'sk-hlisQdgqViJlx8pB4bcAxJjRq8tDHxY-8Ui_nDold0T3BlbkFJkhzrdCGrIc27GECsAHaVprI1VIrUSQnk9TBlj_26IA',
             });
 
             const response = await client.chat.completions.create({

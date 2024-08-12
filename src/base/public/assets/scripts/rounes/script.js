@@ -43,7 +43,6 @@ async function rounerun() {
         
             button_roune_submit.addEventListener('click', async () => {
                 if (userCombination.length){
-                    alert(userCombination);
                     const compare = await Compare(userCombination);
                     if (compare) {
                         console.warn('Комбинация найдена');
@@ -73,12 +72,9 @@ async function rounerun() {
                             await setData(getQueryParams().userId, 'stage', 0);
                             run();
                         }
-
-                        alert('Комбинация найдена');
                     }
                     else{
-                        console.warn('Комбинация не найдена');
-                        alert('Комбинация не найдена');
+                        alert('Вы ввели неправильную комбинацию рун');
                     }
                     userCombination = [];
                     mainElements.forEach(element => {
@@ -91,7 +87,7 @@ async function rounerun() {
                         }
                     });
                 }
-                else alert('Вы не ввели ни одной комбинации');
+                else alert('Вы даже не тронули ни одну руну');
             })
         }
     }

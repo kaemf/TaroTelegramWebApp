@@ -47,13 +47,13 @@ const PageCards: React.FC = ({ data, rasklad, setData, active, openPage, widthPx
         let card
         setTAloading( true )
         if( !tHistory.some( item => item.name === el.name ) ) {
-
             const response = await getGPTAnswer(PromptGPT(cardHistory.length, data.title, el.name), true);
 
             // await sleep(1000)
 
             const newData = structuredClone( data )
-            newData.whatIsCards = newData.whatIsCards.map( ( elC, i ) => {
+            newData.cardsName[rasklad] = newData.cardsName[rasklad].map( ( elC, i ) => {
+                
                 if( elC.name === el.name ) {
                     elC.tract = response
                     card = elC
@@ -65,7 +65,7 @@ const PageCards: React.FC = ({ data, rasklad, setData, active, openPage, widthPx
 
         setTimeout( async () => {
             setTAloading( false )
-            setTA(card || data.whatIsCards[ el.key ] )
+            setTA(card || data.cardsName[rasklad][ el.key ] )
             setAProcess(true)
             setTimeout( () => setTAA(true), 10 )
         }, 10 )
