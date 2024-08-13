@@ -119,6 +119,10 @@ export default function Requests(app: Express, wRedis: any, mongo: MongoClient){
                 model: 'gpt-4o-mini',
                 messages: [
                     {
+                        role: 'system',
+                        content: "Ты - искусный таролог. Ты работаешь с расскладами таро. Твоя роль - опытный таролог. Ты отвечаешь только на русском языке."
+                    },
+                    {
                         role: 'user',
                         content: promptInputed?
                             prompt:

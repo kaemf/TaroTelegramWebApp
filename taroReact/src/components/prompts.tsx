@@ -1,5 +1,5 @@
 function rule(cardNumber: string){
-    return `Сделай трактовку длиной до 6 предложений и упомяни что это ${cardNumber} карта. Трактовку выполни на русском языке без английских или других языков.`;
+    return `Сделай трактовку длиной до 6 предложений и упомяни что это ${cardNumber} карта.`;
 }
 
 export default function PromptGPT(number: number, func: string, cardName: string){
