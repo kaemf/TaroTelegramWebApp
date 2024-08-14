@@ -47,7 +47,7 @@ const PageCards: React.FC = ({ data, rasklad, setData, active, openPage, widthPx
         let card
         setTAloading( true )
         if( !tHistory.some( item => item.name === el.name ) ) {
-            const response = await getGPTAnswer(PromptGPT(cardHistory.length, data.title, el.name), true);
+            const response = await getGPTAnswer(PromptGPT(el.key + 1, data.title, el.name), true);
 
             // await sleep(1000)
 
@@ -175,7 +175,7 @@ const PageCards: React.FC = ({ data, rasklad, setData, active, openPage, widthPx
                 let cardName = data.cardsName[rasklad][i];
 
                 if( !focus || !focus.focus || focus.focus.transform !== el.focus.transform) {
-                    handleEl = {name: cardName.name, focus: el.focus}
+                    handleEl = {name: cardName.name, focus: el.focus, number: i}
                     if( cardHistory.some(item => item.name === cardName.name) ) {
                         seeLater = true;
                     }

@@ -5,7 +5,6 @@ async function run() {
 
         let stage = !parseInt(user.value.stage) ? 0 : parseInt(user.value.stage);
 
-
         switch (stage) {
             case 0:
                 ShowNewContent(`КАРТА ДНЯ`, startMessage[getRandomInt(1, 4)], 'closed', 'Открыть карту', 600);
@@ -25,11 +24,11 @@ async function run() {
 
         button.addEventListener('click', async () => {
             if (stage++ === 2) {
-                await setData(userId, 'stage', -1)
-                Telegram.WebApp.close()
+                await setData(userId, 'stage', -1);
+                Telegram.WebApp.close();
+                return;
             }
-            else stage++;
-            // stage = stage++ === 2 ? Telegram.WebApp.close() && await setData(userId, 'stage', -1) : stage++;
+
             switch (stage) {
                 case 0:
                     ShowNewContent(`КАРТА ДНЯ`, startMessage[getRandomInt(1, 4)], 'closed', 'Открыть карту', 300);

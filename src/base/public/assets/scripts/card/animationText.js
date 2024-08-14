@@ -9,6 +9,6 @@ async function typeText(element, text) {
             } else {
                 clearInterval(typing);
             }
-        }, 25);
+        }, 15);
     }
 }
