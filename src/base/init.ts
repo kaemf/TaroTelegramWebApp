@@ -35,7 +35,7 @@ export default async function init() {
 
     ctx.reply = async (text: string, extra?: any) => {
       let finalExtra = { ...extra, parse_mode: 'HTML' };
-      if (extra && !extra.reply_markup) {
+      if ((extra || !extra) && !extra?.reply_markup) {
         finalExtra.reply_markup = { remove_keyboard: true };
       }
       return originalReply.call(ctx, text, finalExtra);
